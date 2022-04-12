@@ -1,0 +1,75 @@
+alpha;0.5
+atom_types;['B', 'C', 'N', 'O', 'F', 'Si', 'P', 'S', 'Cl', 'Mn', 'Co', 'Cu', 'Br', 'I']
+batch_size;64
+big_negative;-1000000.0
+big_positive;1000000.0
+block_size;100000
+bondtype_to_int;{rdkit.Chem.rdchem.BondType.SINGLE: 0, rdkit.Chem.rdchem.BondType.DOUBLE: 1, rdkit.Chem.rdchem.BondType.TRIPLE: 2}
+chirality;['None', 'R', 'S']
+data_path;data/fine-tuning/
+dataset_dir;data/fine-tuning/anti-sars/
+dim_edges;[152, 152, 3]
+dim_f_add;[152, 14, 3, 3]
+dim_f_add_p0;19152
+dim_f_add_p1;126
+dim_f_conn;[152, 3]
+dim_f_conn_p0;456
+dim_f_conn_p1;3
+dim_f_term;1
+dim_nodes;[152, 17]
+enn_depth;4
+enn_dropout_p;0.0
+enn_hidden_dim;250
+epochs;200
+formal_charge;[-1, 0, 1]
+gather_att_depth;4
+gather_att_dropout_p;0.0
+gather_att_hidden_dim;250
+gather_emb_depth;4
+gather_emb_dropout_p;0.0
+gather_emb_hidden_dim;250
+gather_width;100
+gen_batch_size;1000
+generation_epoch;5
+group_size;1000
+hidden_node_features;100
+ignore_H;True
+imp_H;[0, 1, 2, 3]
+init_lr;0.0001
+int_to_bondtype;{0: rdkit.Chem.rdchem.BondType.SINGLE, 1: rdkit.Chem.rdchem.BondType.DOUBLE, 2: rdkit.Chem.rdchem.BondType.TRIPLE}
+job_dir;output_anti-sars/learning/job_0/
+job_type;learn
+max_n_nodes;152
+max_rel_lr;1
+message_passes;3
+message_size;100
+min_rel_lr;0.01
+mlp1_depth;4
+mlp1_dropout_p;0.0
+mlp1_hidden_dim;500
+mlp2_depth;4
+mlp2_dropout_p;0.0
+mlp2_hidden_dim;500
+model;GGNN
+n_atom_types;14
+n_chirality;0
+n_edge_features;3
+n_formal_charge;3
+n_imp_H;0
+n_node_features;17
+n_samples;2000
+n_workers;0
+restart;False
+sample_every;5
+score_type;activity
+sigma;20
+tensorboard_dir;output_anti-sars/tensorboard/learning/job_0/
+test_set;data/fine-tuning/anti-sars/test.smi
+training_set;data/fine-tuning/anti-sars/train.smi
+use_aromatic_bonds;False
+use_canon;True
+use_chirality;False
+use_explicit_H;False
+validation_set;data/fine-tuning/anti-sars/valid.smi
+weight_decay;0.0
+weights_initialization;uniform

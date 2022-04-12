@@ -1,0 +1,66 @@
+* Creating dataset directory output/output_anti-sars/6-4-22/
+* Creating model subdirectory output/output_anti-sars/6-4-22/job_0/
+* Running job as a normal process.
+/anaconda/envs/RL-GraphINVENT-env/bin/python
+* Running job using HDF datasets located at data/pre-training/anti-sars/
+* Checking that the relevant parameters match those used in preprocessing the dataset.
+-- Job parameters match preprocessing parameters.
+* Run mode: 'train'
+* Loading preprocessed training set.
+-- time elapsed: 0.00161 s
+* Loading preprocessed validation set.
+-- time elapsed: 0.00248 s
+* Loading training set properties.
+* Touching output files.
+* Defining model and optimizer.
+-- Initializing model from scratch.
+-- Defining optimizer.
+-- Defining scheduler.
+* Beginning training.
+* Training epoch 1.
+* Training epoch 2.
+* Training epoch 3.
+* Training epoch 4.
+* Training epoch 5.
+* Generating 10000 molecules.
+Batch 1 of 10
+Generated 1004 molecules in 237.1 s
+--4.2345 molecules/s
+Batch 2 of 10
+Generated 1011 molecules in 229.2 s
+--4.4102 molecules/s
+Batch 3 of 10
+Generated 1005 molecules in 234.4 s
+--4.287 molecules/s
+Batch 4 of 10
+Generated 1008 molecules in 229.2 s
+--4.3986 molecules/s
+Batch 5 of 10
+Generated 1027 molecules in 236.0 s
+--4.3509 molecules/s
+Batch 6 of 10
+Generated 1018 molecules in 239.7 s
+--4.2478 molecules/s
+Batch 7 of 10
+Generated 1003 molecules in 229.1 s
+--4.3777 molecules/s
+Batch 8 of 10
+Generated 1017 molecules in 217.4 s
+--4.6779 molecules/s
+Batch 9 of 10
+Generated 1001 molecules in 236.4 s
+--4.2343 molecules/s
+Batch 10 of 10
+Generated 1002 molecules in 223.3 s
+--4.4862 molecules/s
+* Evaluating model.
+-- Calculating NLL statistics for validation set.
+-- Calculating NLL statistics for training set.
+-- time elapsed: 17948.72551 s
+* Saving model state at Epoch 5.
+* Training epoch 6.
+* Training epoch 7.
+* Training epoch 8.
+* Training epoch 9.
+* Training epoch 10.
+* Generating 10000 molecules.

@@ -1,0 +1,462 @@
+* Creating dataset directory output_anti-sars/learning/
+* Creating model subdirectory output_anti-sars/learning/job_0/
+* Running job as a normal process.
+/anaconda/envs/RL-GraphINVENT-env/bin/python
+* Running job using HDF datasets located at data/fine-tuning/anti-sars/
+* Checking that the relevant parameters match those used in preprocessing the dataset.
+-- Job parameters match preprocessing parameters.
+* Run mode: 'learn'
+* Loading training set properties.
+* Touching output files.
+* Defining model and optimizer.
+-- Initializing model from scratch.
+-- Defining optimizer.
+-- Defining scheduler.
+* Evaluating model.
+* Generating 2000 molecules.
+Batch 1 of 2
+Generated 1000 molecules in 637.0 s
+--1.5699 molecules/s
+Batch 2 of 2
+Generated 1002 molecules in 615.9 s
+--1.6268 molecules/s
+* Beginning learning.
+* Learning step 1.
+Generated 64 molecules in 39.99 s
+--1.6002 molecules/s
+Generated 65 molecules in 40.36 s
+--1.6104 molecules/s
+* Learning step 2.
+Generated 65 molecules in 35.38 s
+--1.8372 molecules/s
+Generated 65 molecules in 40.6 s
+--1.6009 molecules/s
+* Learning step 3.
+Generated 65 molecules in 33.72 s
+--1.9277 molecules/s
+Generated 65 molecules in 37.05 s
+--1.7546 molecules/s
+* Learning step 4.
+Generated 66 molecules in 36.62 s
+--1.8024 molecules/s
+Generated 65 molecules in 31.27 s
+--2.079 molecules/s
+* Learning step 5.
+Generated 65 molecules in 39.48 s
+--1.6465 molecules/s
+Generated 64 molecules in 38.48 s
+--1.6633 molecules/s
+* Evaluating model.
+* Generating 2000 molecules.
+Batch 1 of 2
+Generated 1030 molecules in 612.0 s
+--1.683 molecules/s
+Batch 2 of 2
+Generated 1016 molecules in 596.6 s
+--1.703 molecules/s
+* Saving model state at Epoch 5.
+Updated best model
+* Learning step 6.
+Generated 64 molecules in 39.08 s
+--1.6375 molecules/s
+Generated 65 molecules in 34.38 s
+--1.8904 molecules/s
+* Learning step 7.
+Generated 69 molecules in 37.95 s
+--1.8183 molecules/s
+Generated 65 molecules in 37.02 s
+--1.7557 molecules/s
+* Learning step 8.
+Generated 65 molecules in 39.83 s
+--1.632 molecules/s
+Generated 65 molecules in 39.07 s
+--1.6636 molecules/s
+* Learning step 9.
+Generated 64 molecules in 40.4 s
+--1.5842 molecules/s
+Generated 64 molecules in 37.84 s
+--1.6915 molecules/s
+* Learning step 10.
+Generated 64 molecules in 35.68 s
+--1.7937 molecules/s
+Generated 64 molecules in 34.2 s
+--1.8715 molecules/s
+* Evaluating model.
+* Generating 2000 molecules.
+Batch 1 of 2
+Generated 1004 molecules in 587.3 s
+--1.7095 molecules/s
+Batch 2 of 2
+Generated 1023 molecules in 582.3 s
+--1.7569 molecules/s
+* Saving model state at Epoch 10.
+* Learning step 11.
+Generated 66 molecules in 38.64 s
+--1.7081 molecules/s
+Generated 65 molecules in 37.98 s
+--1.7113 molecules/s
+* Learning step 12.
+Generated 66 molecules in 36.54 s
+--1.8061 molecules/s
+Generated 66 molecules in 37.25 s
+--1.7717 molecules/s
+* Learning step 13.
+Generated 67 molecules in 36.8 s
+--1.8204 molecules/s
+Generated 65 molecules in 40.91 s
+--1.5887 molecules/s
+* Learning step 14.
+Generated 65 molecules in 41.94 s
+--1.5497 molecules/s
+Generated 65 molecules in 37.23 s
+--1.746 molecules/s
+* Learning step 15.
+Generated 64 molecules in 37.59 s
+--1.7025 molecules/s
+Generated 66 molecules in 37.95 s
+--1.7391 molecules/s
+* Evaluating model.
+* Generating 2000 molecules.
+Batch 1 of 2
+Generated 1007 molecules in 353.9 s
+--2.8455 molecules/s
+Batch 2 of 2
+Generated 1014 molecules in 329.7 s
+--3.0753 molecules/s
+* Saving model state at Epoch 15.
+* Learning step 16.
+Generated 67 molecules in 25.64 s
+--2.613 molecules/s
+Generated 66 molecules in 37.91 s
+--1.741 molecules/s
+* Learning step 17.
+Generated 67 molecules in 12.81 s
+--5.2318 molecules/s
+Generated 64 molecules in 43.82 s
+--1.4606 molecules/s
+* Learning step 18.
+Generated 65 molecules in 18.96 s
+--3.4275 molecules/s
+Generated 65 molecules in 38.77 s
+--1.6765 molecules/s
+* Learning step 19.
+Generated 67 molecules in 31.64 s
+--2.1177 molecules/s
+Generated 64 molecules in 31.77 s
+--2.0144 molecules/s
+* Learning step 20.
+Generated 64 molecules in 36.43 s
+--1.7568 molecules/s
+Generated 65 molecules in 41.28 s
+--1.5747 molecules/s
+* Evaluating model.
+* Generating 2000 molecules.
+Batch 1 of 2
+Generated 1015 molecules in 757.4 s
+--1.34 molecules/s
+Batch 2 of 2
+Generated 1017 molecules in 771.5 s
+--1.3183 molecules/s
+* Saving model state at Epoch 20.
+* Learning step 21.
+Generated 64 molecules in 46.9 s
+--1.3647 molecules/s
+Generated 67 molecules in 36.96 s
+--1.8127 molecules/s
+* Learning step 22.
+Generated 64 molecules in 46.48 s
+--1.377 molecules/s
+Generated 66 molecules in 39.22 s
+--1.683 molecules/s
+* Learning step 23.
+Generated 65 molecules in 54.66 s
+--1.1892 molecules/s
+Generated 65 molecules in 40.29 s
+--1.6132 molecules/s
+* Learning step 24.
+Generated 64 molecules in 55.29 s
+--1.1575 molecules/s
+Generated 67 molecules in 39.78  s
+--1.6843 molecules/s
+* Learning step 25.
+Generated 66 molecules in 53.04 s
+--1.2444 molecules/s
+Generated 66 molecules in 40.23 s
+--1.6406 molecules/s
+* Evaluating model.
+* Generating 2000 molecules.Batch 1 of 2
+Generated 1022 molecules in 1.02e+03 s
+--1.0022 molecules/s
+Batch 2 of 2
+Generated 1005 molecules in 1.019e+03 s
+--0.98636 molecules/s
+* Saving model state at Epoch 25.
+* Learning step 26.
+Generated 64 molecules in 78.77 s
+--0.81251 molecules/s
+Generated 64 molecules in 37.69 s
+--1.6981 molecules/s
+* Learning step 27.
+Generated 64 molecules in 75.46 s
+--0.84812 molecules/s
+Generated 65 molecules in 41.83 s
+--1.554 molecules/s
+* Learning step 28.
+Generated 64 molecules in 77.63 s
+--0.82444 molecules/s
+Generated 64 molecules in 37.04 s
+--1.7279 molecules/s
+* Learning step 29.
+Generated 66 molecules in 80.71 s
+--0.81774 molecules/s
+Generated 66 molecules in 43.91 s
+--1.5029 molecules/s
+* Learning step 30.
+Generated 65 molecules in 82.05 s
+--0.79223 molecules/s
+Generated 64 molecules in 38.69 s
+--1.6544 molecules/s
+* Evaluating model.
+* Generating 2000 molecules.
+Batch 1 of 2
+Generated 1007 molecules in 1.311e+03 s
+--0.76826 molecules/s
+Batch 2 of 2
+Generated 1008 molecules in 1.295e+03 s
+--0.77831 molecules/s
+* Saving model state at Epoch 30.
+* Learning step 31.
+Generated 64 molecules in 88.52 s
+--0.72301 molecules/s
+Generated 64 molecules in 38.63 s
+--1.6568 molecules/s
+* Learning step 32.
+Generated 66 molecules in 79.53 s
+--0.82985 molecules/s
+Generated 64 molecules in 38.6 s
+--1.6579 molecules/s
+* Learning step 33.
+Generated 64 molecules in 63.69 s
+--1.0049 molecules/s
+Generated 64 molecules in 36.1 s
+--1.7728 molecules/s
+* Learning step 34.
+Generated 64 molecules in 66.96 s
+--0.95582 molecules/s
+Generated 64 molecules in 39.2 s
+--1.6326 molecules/s
+* Learning step 35.
+Generated 64 molecules in 77.42 s
+--0.82671 molecules/s
+Generated 64 molecules in 38.53 s
+--1.6612 molecules/s
+* Evaluating model.
+* Generating 2000 molecules.
+Batch 1 of 2
+Generated 1013 molecules in 1.574e+03 s
+--0.6436 molecules/s
+Batch 2 of 2
+Generated 1010 molecules in 1.612e+03 s
+--0.62649 molecules/s
+* Saving model state at Epoch 35.
+* Learning step 36.
+Generated 64 molecules in 118.0 s
+--0.54238 molecules/s
+Generated 64 molecules in 69.0 s
+--0.9276 molecules/s
+* Learning step 37.
+Generated 65 molecules in 125.5 s
+--0.51777 molecules/s
+Generated 64 molecules in 57.6 s
+--1.1111 molecules/s
+* Learning step 38.
+Generated 64 molecules in 144.3 s
+--0.44366 molecules/s
+Generated 67 molecules in 53.21 s
+--1.2591 molecules/s
+* Learning step 39.
+Generated 65 molecules in 125.5 s
+--0.51804 molecules/s
+Generated 67 molecules in 72.83 s
+--0.91995 molecules/s
+* Learning step 40.
+Generated 65 molecules in 118.7 s
+--0.54762 molecules/s
+Generated 65 molecules in 45.26 s
+--1.4361 molecules/s
+* Evaluating model.
+* Generating 2000 molecules.
+Batch 1 of 2
+Generated 1023 molecules in 1.995e+03 s
+--0.51289 molecules/s
+Batch 2 of 2
+Generated 1012 molecules in 2.066e+03 s
+--0.48991 molecules/s
+* Saving model state at Epoch 40.
+* Learning step 41.
+Generated 65 molecules in 133.6 s
+--0.48657 molecules/s
+Generated 64 molecules in 62.6 s
+--1.0223 molecules/s
+* Learning step 42.
+Generated 67 molecules in 142.0 s
+--0.47187 molecules/s
+Generated 65 molecules in 60.26 s
+--1.0787 molecules/s
+* Learning step 43.
+Generated 65 molecules in 117.3 s
+--0.55416 molecules/s
+Generated 67 molecules in 67.45 s
+--0.99337 molecules/s
+* Learning step 44.
+Generated 64 molecules in 60.98 s
+--1.0495 molecules/s
+Generated 65 molecules in 61.09 s
+--1.064 molecules/s
+* Learning step 45.
+Generated 84 molecules in 28.12 s
+--2.9876 molecules/s
+Generated 64 molecules in 67.16 s
+--0.95301 molecules/s
+* Evaluating model.
+* Generating 2000 molecules.
+Batch 1 of 2
+Generated 1056 molecules in 257.9 s
+--4.0939 molecules/s
+Batch 2 of 2
+Generated 1031 molecules in 259.8 s
+--3.9685 molecules/s
+* Saving model state at Epoch 45.
+* Learning step 46.
+Generated 71 molecules in 22.13 s
+--3.2087 molecules/s
+Generated 64 molecules in 74.37 s
+--0.86053 molecules/s
+* Learning step 47.
+Generated 65 molecules in 18.43 s
+--3.5269 molecules/s
+Generated 65 molecules in 63.96 s
+--1.0162 molecules/s
+* Learning step 48.
+Generated 64 molecules in 13.54 s
+--4.7278 molecules/s
+Generated 66 molecules in 58.76 s
+--1.1233 molecules/s
+* Learning step 49.
+Generated 65 molecules in 14.91 s
+--4.3601 molecules/s
+Generated 65 molecules in 76.13 s
+--0.85386 molecules/s
+* Learning step 50.
+Generated 66 molecules in 14.45 s
+--4.5668 molecules/s
+Generated 64 molecules in 64.76 s
+--0.98822 molecules/s
+* Evaluating model.
+* Generating 2000 molecules.
+Batch 1 of 2
+Generated 1016 molecules in 160.2 s
+--6.3425 molecules/s
+Batch 2 of 2
+Generated 1004 molecules in 170.9 s
+--5.8747 molecules/s
+* Saving model state at Epoch 50.
+* Learning step 51.
+Generated 85 molecules in 26.02 s
+--3.2673 molecules/s
+Generated 67 molecules in 3.136e+03 s
+--0.021362 molecules/s
+* Learning step 52.
+Generated 64 molecules in 13.45 s
+--4.7568 molecules/s
+Generated 64 molecules in 62.64 s
+--1.0216 molecules/s
+* Learning step 53.
+Generated 64 molecules in 14.39 s
+--4.4484 molecules/s
+Generated 66 molecules in 60.71 s
+--1.0871 molecules/s
+* Learning step 54.
+Generated 64 molecules in 26.46 s
+--2.4189 molecules/s
+Generated 65 molecules in 58.03 s
+--1.1202 molecules/s
+* Learning step 55.
+Generated 66 molecules in 64.4 s
+--1.0249 molecules/s
+Generated 65 molecules in 59.7 s
+--1.0888 molecules/s
+* Evaluating model.
+* Generating 2000 molecules.
+Batch 1 of 2
+Generated 1051 molecules in 603.2 s
+--1.7423 molecules/s
+Batch 2 of 2
+Generated 1002 molecules in 588.1 s
+--1.7038 molecules/s
+* Saving model state at Epoch 55.
+* Learning step 56.
+Generated 65 molecules in 44.12 s
+--1.4734 molecules/s
+Generated 64 molecules in 62.8 s
+--1.0191 molecules/s
+* Learning step 57.
+Generated 68 molecules in 47.27 s
+--1.4385 molecules/s
+Generated 64 molecules in 68.21 s
+--0.93824 molecules/s
+* Learning step 58.
+Generated 69 molecules in 10.12 s
+--6.8183 molecules/s
+Generated 65 molecules in 62.43 s
+--1.0412 molecules/s
+* Learning step 59.
+Generated 67 molecules in 3.893 s
+--17.212 molecules/s
+Generated 64 molecules in 62.84 s
+--1.0184 molecules/s
+* Learning step 60.
+Generated 72 molecules in 44.64 s
+--1.613 molecules/s
+Generated 64 molecules in 65.84 s
+--0.97201 molecules/s
+* Evaluating model.
+* Generating 2000 molecules.
+Batch 1 of 2
+Generated 1003 molecules in 133.9 s
+--7.4921 molecules/s
+Batch 2 of 2
+Generated 1027 molecules in 554.5 s
+--1.8522 molecules/s
+* Saving model state at Epoch 60.
+* Learning step 61.
+Generated 73 molecules in 43.45 s
+--1.6802 molecules/s
+Generated 65 molecules in 64.57 s
+--1.0066 molecules/s
+* Learning step 62.
+Generated 74 molecules in 2.24 s
+--33.038 molecules/s
+Generated 65 molecules in 73.05 s
+--0.88984 molecules/s
+* Learning step 63.
+Generated 94 molecules in 2.109 s
+--44.579 molecules/s
+Generated 64 molecules in 70.92 s
+--0.90244 molecules/s
+* Learning step 64.
+Generated 80 molecules in 2.013 s
+--39.747 molecules/s
+Generated 64 molecules in 66.4 s
+--0.96386 molecules/s
+* Learning step 65.
+Generated 106 molecules in 2.055 s
+--51.572 molecules/s
+Generated 66 molecules in 63.38 s
+--1.0413 molecules/s
+* Evaluating model.
+* Generating 2000 molecules.
+Batch 1 of 2
+Generated 1920 molecules in 23.09 s
+--83.168 molecules/s
+-- Sleeping 2 seconds.

@@ -1,0 +1,19 @@
+atom_types;['B', 'C', 'N', 'O', 'F', 'Si', 'P', 'S', 'Cl', 'Mn', 'Co', 'Cu', 'Br', 'I']
+formal_charge;[-1, 0, 1]
+max_n_nodes;152
+job_type;train
+dataset_dir;data/pre-training/anti-sars/
+restart;False
+model;GGNN
+sample_every;5
+init_lr;0.0001
+min_rel_lr;0.001
+max_rel_lr;1
+epochs;20
+batch_size;1000
+block_size;100000
+generation_epoch;30
+n_samples;10000
+n_workers;0
+job_dir;output/output_anti-sars/4-4-22/job_0/
+tensorboard_dir;output/output_anti-sars/tensorboard/4-4-22/job_0/

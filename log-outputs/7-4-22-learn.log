@@ -1,0 +1,16 @@
+* Creating dataset directory output_anti-sars/7-4-22/
+* Creating model subdirectory output_anti-sars/7-4-22/job_0/
+* Running job as a normal process.
+/anaconda/envs/RL-GraphINVENT-env/bin/python
+* Running job using HDF datasets located at data/fine-tuning/anti-sars/
+* Checking that the relevant parameters match those used in preprocessing the dataset.
+-- Job parameters match preprocessing parameters.
+* Run mode: 'learn'
+* Loading training set properties.
+* Touching output files.
+* Defining model and optimizer.
+-- Initializing model from scratch.
+-- Defining optimizer.
+-- Defining scheduler.
+* Evaluating model.
+* Generating 1000 molecules.
