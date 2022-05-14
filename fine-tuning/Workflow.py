@@ -5,6 +5,7 @@ import shutil
 import time
 import torch
 import torch.utils.tensorboard
+from tensorflow.keras.models import load_model
 from tqdm import tqdm
 import os
 from rdkit.Chem import MolFromSmiles, QED, Crippen, Descriptors, rdMolDescriptors, AllChem
@@ -16,8 +17,10 @@ from tensorboard_writer import writer as tb_writer
 import analyze as anal
 import generate
 import util
+import json
 from loss import compute_loss
 from score import compute_score
+from molgym.mpnn.layers import custom_objects
 
 # defines `Workflow` class
 
@@ -76,6 +79,11 @@ class Workflow:
         job_dir = self.C.job_dir
         model_dir = self.C.dataset_dir
 
+        self.ic50_model = load_model('/home/btp/ritwiz-RL-GraphINVENT-updated/saved_models/mpnn_13_4_22', custom_objects=custom_objects)
+        with open('/home/btp/ritwiz-RL-GraphINVENT-updated/atom_types.json') as fp:
+            self.atom_types = json.load(fp)
+        with open('/home/btp/ritwiz-RL-GraphINVENT-updated/bond_types.json') as fp:
+            self.bond_types = json.load(fp)
         if self.C.restart:
             print("-- Loading model from previous saved state.", flush=True)
             self.restart_epoch = util.get_restart_epoch()
@@ -277,7 +285,7 @@ class Workflow:
                                                                     generation_batch_idx=idx)
 
             uniqueness_tensor = util.get_unique_tensor(smiles)
-            score_batch = compute_score(g[1], t, validity_tensor, uniqueness_tensor, smiles, self.drd2_model)
+            score_batch = compute_score(g[1], t, validity_tensor, uniqueness_tensor, smiles, self.drd2_model, self.ic50_model, self.atom_types, self.bond_types)
             score = torch.cat((score, score_batch))
 
         return torch.mean(score)
@@ -322,7 +330,7 @@ class Workflow:
                                                                  generation_batch_idx=-1)
 
         uniqueness_tensor = util.get_unique_tensor(smiles)
-        score = compute_score(g[1], t, validity_tensor, uniqueness_tensor, smiles, self.drd2_model)
+        score = compute_score(g[1], t, validity_tensor, uniqueness_tensor, smiles, self.drd2_model, self.ic50_model, self.atom_types, self.bond_types)
         loss = (1-self.C.alpha) * torch.mean(compute_loss(score, a, p, uniqueness_tensor))  
 
         score_write = torch.mean(torch.clone(score)).item()
@@ -350,7 +358,7 @@ class Workflow:
                                                                  generation_batch_idx=-1)
 
         uniqueness_tensor = util.get_unique_tensor(smiles)
-        score = compute_score(g[1], t, validity_tensor, uniqueness_tensor, smiles, self.drd2_model)
+        score = compute_score(g[1], t, validity_tensor, uniqueness_tensor, smiles, self.drd2_model, self.ic50_model, self.atom_types, self.bond_types)
         uniqueness_tensor = torch.where(score > self.best_avg_score, uniqueness_tensor, torch.zeros(len(score), device="cpu"))
         loss += self.C.alpha * torch.mean(compute_loss(score, a, p, uniqueness_tensor))  
 

@@ -2,3 +2,4 @@
 *.h5
 saved_models/
 *.pth
+*.pickle

@@ -13,12 +13,12 @@ home = str(Path.home())
 
 # define what you want to do for the specified job(s)
 dataset = "anti-sars"
-job_type = "learn"       # "learn" or "generate"
+job_type = "generate"       # "learn" or "generate"
 jobdir_start_idx = 0   # where to start indexing job dirs
 n_jobs = 1            # number of jobs to run per model
 restart = False
 force_overwrite = True  # overwrite job directories which already exist
-jobname = "9-4-22-best-generative-model-epoch-30"      # used to create a sub directory
+jobname = "13-4-22-ic50"      # used to create a sub directory
 
 # if running using SLURM, specify the parameters below
 use_slurm = False        # use SLURM or not
@@ -45,18 +45,18 @@ params = {
     "init_lr": 1e-4,
     "min_rel_lr": 1e-2,
     "max_rel_lr": 1,
-    "epochs": 200,
+    "epochs": 2,
     "batch_size": 64,
     "gen_batch_size": 2000,
     "block_size": 100000,
-    "generation_epoch": 100,  # <-- which model to use (i.e. which epoch)
+    "generation_epoch": 200,  # <-- which model to use (i.e. which epoch)
     "n_samples": 2000,       # <-- how many structures to generate
     # additional paramaters can be defined here, if different from the "defaults"
     # (!!!) for "generate" jobs, don't forget to specify "generation_epoch" and "n_samples"
     "n_workers": 0,
     "sigma": 20,
     "alpha": 0.5,
-    "score_type": "qed", #"reduce", "augment", "qed", "activity"
+    "score_type": "ic50", #"reduce", "augment", "qed", "activity"
 }
 
 
